@@ -54,7 +54,9 @@ Run & Test
 Step A: Run processCalendarEventsForWeek() (or set a time-based trigger) to generate folders for upcoming events.
 Step B: As Participant B (the invited attendee), submit the Google Form.
 Result: You (Participant B) receive a PDF via email, and Participant A gets notified.
+
 🚀 Example Flow
+
 Event in Calendar
 
 You schedule a Calendar event for next week and invite john.doe@example.com.
@@ -64,23 +66,10 @@ Form Submission
 John Doe fills out the Google Form.
 Apps Script copies the Doc template, replaces placeholders with John’s answers, saves the PDF in his folder, and emails him the PDF.
 Participant A gets an alert that the submission was processed.
+
 📂 File Structure
-bash
-Copy
-Edit
+
 /Calendar-Form-Handoff-Automation
 ├── processCalendarEventsForWeek.js   # Calendar scanning & folder creation
 ├── createFormSubmitTrigger.js        # Generates installable form submission trigger
 └── onFormSubmit_Custom.js            # Custom form submission logic (template -> PDF -> email)
-🔧 Contributing
-Fork this repository.
-Create a new branch (e.g. feature/my-improvements).
-Commit & push your changes.
-Open a Pull Request describing enhancements.
-💌 Support
-For questions or troubleshooting, feel free to open an issue or contact the repository maintainer.
-
-📝 License
-This project is provided under an MIT License. See the LICENSE file for details.
-
-Enjoy automating your Google Workspace workflows! ✨
